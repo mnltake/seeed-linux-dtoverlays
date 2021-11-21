@@ -9,22 +9,15 @@ Overlays:
 
 Step 1: Clone this repo:
 ```sh
-git clone https://github.com/Seeed-Studio/seeed-linux-dtoverlays
+git clone https://github.com/mnltake/seeed-linux-dtoverlays
 cd seeed-linux-dtoverlays
+
 ```
 Step 2: Install *.dtbo:
 ```sh
-#Select platform by replacing word <platform> to
-#one of {jetsonnano bb stm32mp1 rpi imx6ull}.
-make all_<platform>
-#On iMx6ull-NPI
-sudo make install_imx6ull
-#on RPI
+make all_rpi
 sudo make install_rpi
-#On beagleboard
-sudo make install_bb
-#On JetsonNano
-sudo make install_jetsonnano
+sudo reboot
 ```
 more:
 ```sh
