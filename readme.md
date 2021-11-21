@@ -10,13 +10,13 @@ Overlays:
 Step 1: Clone this repo:
 ```sh
 git clone https://github.com/mnltake/seeed-linux-dtoverlays
-cd seeed-linux-dtoverlays/overlays/rpi
+cd seeed-linux-dtoverlays
 
 ```
 Step 2: Install *.dtbo:
 ```sh
-make all
-sudo make install
+make all_rpi
+sudo make install_rpi
 sudo reboot
 ```
 more:
