@@ -206,7 +206,7 @@
 
 				usr_btn3: usr_btn3 {
 					debounce-interval = <5>;
-					linux,code = <33>; /* BTN_3, KEY_F */
+					linux,code = <143>; /* KEY_WAKEUP */
 					label = "usr_btn3";
 					gpios = <&mcp23008 3 1>;
 					gpio-key,wakeup;
@@ -215,7 +215,7 @@
 
 				pwr_btn: pwr_btn {
 					debounce-interval = <2000>;
-					linux,code = <116>; /* PWR_KEY, KEY_SLEEP */
+					linux,code = <116>; /* KEY_POWER */
 					label = "power_key";
 					gpios = <&gpio 13 1>;
 					gpio-key,wakeup;
