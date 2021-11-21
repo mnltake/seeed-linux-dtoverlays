@@ -213,8 +213,8 @@
 				};
 
 				pwr_btn: pwr_btn {
-					debounce-interval = <5>;
-					linux,code = <142>; /* PWR_KEY, KEY_SLEEP */
+					debounce-interval = <2000>;
+					linux,code = <116>; /* PWR_KEY,KEY__PWR */
 					label = "power_key";
 					gpios = <&gpio 13 1>;
 					gpio-key,wakeup;
