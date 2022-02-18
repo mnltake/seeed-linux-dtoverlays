@@ -178,7 +178,8 @@
 
 				usr_btn0: usr_btn0 {
 					debounce-interval = <5>;
-					linux,code = <30>; /* BTN_0, KEY_A */
+					/* https://github.com/torvalds/linux/blob/v4.12/include/uapi/linux/input-event-codes.h */
+					linux,code = <104>; /* BTN_1, KEY_PAGEUP */
 					label = "usr_btn0";
 					gpios = <&mcp23008 0 1>;
 					gpio-key,wakeup;
@@ -187,7 +188,7 @@
 
 				usr_btn1: usr_btn1 {
 					debounce-interval = <5>;
-					linux,code = <31>; /* BTN_1, KEY_S */
+					linux,code =  <109>; /* BTN_2,KEY_PAGEDOWN */
 					label = "usr_btn1";
 					gpios = <&mcp23008 2 1>;
 					gpio-key,wakeup;
@@ -196,7 +197,7 @@
 
 				usr_btn2: usr_btn2 {
 					debounce-interval = <5>;
-					linux,code = <32>; /* BTN_2, KEY_D */
+					linux,code = <0x111>; /* BTN_3, BTN_RIGHT */
 					label = "usr_btn2";
 					gpios = <&mcp23008 1 1>;
 					gpio-key,wakeup;
@@ -205,7 +206,7 @@
 
 				usr_btn3: usr_btn3 {
 					debounce-interval = <5>;
-					linux,code = <33>; /* BTN_3, KEY_F */
+					linux,code = <125>; /* BTN_3, KEY_LEFTMETA */
 					label = "usr_btn3";
 					gpios = <&mcp23008 3 1>;
 					gpio-key,wakeup;
