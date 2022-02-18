@@ -43,4 +43,4 @@ more:
 Mainline does not have a kernel module, or there is controversy about a kernel module that does work well. We will also collect them together and put them here.
 The kernel modules will have the corresponding documentation and detailed instructions。
 
-![rpioverlay](https://user-images.githubusercontent.com/45388626/154653004-b1bd3c28-6615-4d94-bd13-084a97690db7.png)
+![Rpiroverlay](https://user-images.githubusercontent.com/45388626/154653395-4abb0dd8-5d8c-4419-8239-6b84c041ba45.png)
